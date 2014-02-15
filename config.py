@@ -4,8 +4,8 @@ import web
 # Database
 db = web.database(dbn='postgres', db='appname', user='username', pw='')
 
-# Cache
-cache = True # False # Producción
+# realizar cache de la página.
+cache = False 
 
 # mensaje de error para depuración y reloader 
 web.config.debug = True # False # Producción
