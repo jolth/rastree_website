@@ -98,7 +98,94 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/** Commun **/
+body {
+color: #646f76;
+font-weight: normal;
+font-style: normal;
+font-variant: normal;
+}
 
+a {
+text-decoration: none;
+color: #646f76;
+}
+
+a:focus {
+outline:none; 
+border:none;
+}
+
+.inner {
+position: relative;
+max-width: 1170px;
+margin: 0 auto;
+padding: 0 30px;
+overflow: hidden;
+}
+
+
+/** Header **/
+
+header {
+position: fixed;
+background: rgba(190,190,190,0.9);
+padding: 5px 0 0;
+top: 0;
+left: 0;
+right: 0;
+z-index: 10;
+}
+
+nav {
+float: right;
+}
+
+nav ul {
+float: right;    
+padding: 0;
+}
+
+nav ul>li {
+margin: 0;
+padding: 0;
+float: left;
+}
+
+nav a {
+float: left;
+padding: 15px 18px;
+line-height: 1;
+transition: .2s;
+}
+
+nav a.launch {
+background: rgb(255,204,0);
+color: #fff;
+white-space: nowrap;
+margin-left: 18px;
+padding: 15px 18px;
+font-weight: bold;
+border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+}
+
+nav a:hover,
+nav a:focus{
+color: rgb(255,204,0); 
+}
+
+nav a.launch:hover,
+nav a.launch:focus {
+color: #646f76;
+}
+
+nav a#pull {
+display: none;
+}
+
+/** Hero **/
 
 
 
@@ -121,15 +208,23 @@ textarea {
 /*
  * Image replacement
  */
-
 .ir {
     background-color: transparent;
     border: 0;
     overflow: hidden;
     /* IE 6/7 fallback */
     *text-indent: -9999px;
+    /* Configure */
+    background-image: url("/static/img/logo_750x208.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 239px;
+    height: 67px;
+    /*Extras */
+    display: inline-block;
+    float: left;
+    margin: 0;
 }
-
 .ir:before {
     content: "";
     display: block;

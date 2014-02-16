@@ -8,7 +8,7 @@ from urls import urls
 
 class Home:
     def GET(self):
-        return render.base(view.index())
+        return render.base(view.index(), "gestión vehicular y seguimiento satelital")
 
         
 def setup_error_emaling(app):
