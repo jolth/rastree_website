@@ -116,6 +116,12 @@ outline:none;
 border:none;
 }
 
+h1, h2, h3, h4 {
+font-weight: normal;
+margin: 0 0 1em;
+padding: 0;
+}
+
 .inner {
 position: relative;
 max-width: 1170px;
@@ -125,11 +131,12 @@ overflow: hidden;
 }
 
 
+
 /** Header **/
 
 header {
 position: fixed;
-background: rgba(190,190,190,0.9);
+background: rgba(255,255,255,0.9); 
 padding: 5px 0 0;
 top: 0;
 left: 0;
@@ -187,11 +194,62 @@ display: none;
 
 /** Hero **/
 
+#banner {
+margin-top: 5%;
+position: relative;
+}
 
+/*#banner .inner {
+height: 575px;
+padding-top: 100px;
+z-index: 3;
+}*/
+#banner .inner {
+z-index: 3;
+/*padding-top: 100px;*/
+padding-top: 5%;
+}
 
+#banner h1 {
+font-size: 62px;
+color: #fc0;
+line-height: 1;
+text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+width: 49%;
+display: inline-block;
+}
 
+#banner img {
+/*position: relative;
+bottom: 0px;*/
+/*bottom: 31px;*/
+float: right;
+}
 
+#map-canvas, #map_canvas {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+z-index: 1;
+}
 
+#mapOverlay {
+background: -moz-linear-gradient(top,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+z-index: 2;
+}
 
 
 
