@@ -46,7 +46,8 @@ google.maps.event.addDomListener(window, 'load', googleMaps.init(4.3464112753331
 // jQuery
 $(document).ready(function() {
 
-        $('#header a.scroll').on('click', function(){
+        //$('#header a.scroll').on('click', function(){
+        $('header a.scroll').on('click', function(){
         //var h = $('#header').outerHeight();
             var link = this;
             //console.log(link.hash > " ");

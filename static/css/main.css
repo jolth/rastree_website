@@ -188,6 +188,10 @@ margin: 0 0 1em;
 padding: 0;
 }
 
+h3 {
+    font-family: Open sans;
+}
+
 .inner {
 position: relative;
 max-width: 1170px;
@@ -202,9 +206,10 @@ overflow: hidden;
 
 header {
 font-family: 'Open Sans';
-position: fixed;
 background: rgba(255,255,255,0.9); 
-padding: 5px 0 0;
+/*padding: 5px 0 0;*/
+padding: 0.5em 0;
+position: fixed;
 top: 0;
 left: 0;
 right: 0;
@@ -259,7 +264,7 @@ nav a#pull {
 display: none;
 }
 
-/** Hero **/
+/** Banner **/
 
 #banner {
 margin-top: 5%;
@@ -319,8 +324,84 @@ left: 0;
 z-index: 2;
 }
 
+/****/
+#awesomeness {
+    font-size: 1.875em;
+    font-weight: 300;
+    padding: 0.5em 0;
+    background: #7d7d7d;
+    color: #fff;
+    text-align: center;
+}
+
+/** overview **/
+
+#overview {
+    background: #fff;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    /*z-index: 2;*/
+}
+
+#overview ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+#overview ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    font-size: 18px;
+    margin-bottom: 75px;
+}
+
+#overview ul>li {
+    margin: 0;
+    padding: 0;
+}
+
+#overview .icon {
+    height: 195px;
+}
+
+#overview p {
+    margin: 0 15px;
+}
+
+#overview .top {
+}
+
+/*#overview .top {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-size: auto 10px;
+}*/
+
+/*#overview .bottom {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-size: auto 10px;
+}*/
 
 
+/** About **/
+#about {
+    padding: 100px 0;
+    background: #7d7d7d;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.4;
+}
 
 
 
