@@ -1,1 +1,7 @@
 *.pyc
+sesiones/
+.gitignore
+*.swp
+*.aux
+*.bk[0-9]
+
