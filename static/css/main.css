@@ -7,6 +7,8 @@
  *
  */
 
+@import "iconfont.css";
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -267,7 +269,8 @@ display: none;
 /** Banner **/
 
 #banner {
-margin-top: 5%;
+/*margin-top: 5%;*/
+margin-top: 4.5em;
 position: relative;
 }
 
@@ -327,9 +330,12 @@ z-index: 2;
 /****/
 #awesomeness {
     font-size: 1.875em;
-    font-weight: 300;
+    font-weight: bold;
     padding: 0.5em 0;
-    background: #7d7d7d;
+    /*background: #7d7d7d;*/
+    /*background: rgb(135,135,135);*/
+    /*background: #ebebeb;*/
+    background: rgb(255,204,0);
     color: #fff;
     text-align: center;
 }
@@ -406,6 +412,38 @@ z-index: 2;
 
 
 
+/** Footer **/
+footer {
+    text-align: center;
+    padding-bottom: 30px;
+    line-height: 1;
+}
+footer p {
+    font-size: .7em;
+}
+
+#social {
+    background: rgb(255,204,0);
+    color: #FFF;
+}
+
+#social a {
+    margin-left: 10px;
+    font-size: 5em;
+    transition: all 0.3s;
+    color: #FFF;
+}
+
+#social h2 {
+    font-size: 1.875em;
+    font-weight: bold;
+}
+
+#social a:hover{
+    text-decoration: none;
+    cursor: pointer;                    
+    color: #646f76;
+}
 
 
 /* ==========================================================================
