@@ -423,13 +423,14 @@ footer p {
 }
 
 #social {
+    padding: 0.5em 0;
     background: rgb(255,204,0);
     color: #FFF;
 }
 
 #social a {
     margin-left: 10px;
-    font-size: 5em;
+    font-size: 3em;
     transition: all 0.3s;
     color: #FFF;
 }
