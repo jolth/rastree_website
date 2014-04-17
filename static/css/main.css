@@ -216,7 +216,8 @@ header {
 font-family: 'Open Sans';
 background: rgba(255,255,255,0.9); 
 /*padding: 5px 0 0;*/
-padding: 0.5em 0;
+/*padding: 0.5em 0;*/
+padding: 10px 0;
 position: fixed;
 top: 0;
 left: 0;
@@ -337,7 +338,7 @@ z-index: 2;
 #awesomeness {
     font-size: 1.875em;
     font-weight: bold;
-    padding: 0.5em 0;
+    /*padding: 0.5em 0;*/
     /*background: #7d7d7d;*/
     /*background: rgb(135,135,135);*/
     /*background: #ebebeb;*/
@@ -349,11 +350,12 @@ z-index: 2;
 /** overview **/
 
 #overview {
-    background: #fff;
     padding: 100px 0;
+    background: #fff;
     text-align: center;
     position: relative;
     /*z-index: 2;*/
+    /*margin-top:100px;*/
 }
 
 #overview ul {
@@ -415,11 +417,28 @@ z-index: 2;
     line-height: 1.4;
 }
 
+#about ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#about img {
+    float: left;
+    margin-right: 30px;
+    width:140px;
+}
+
+#about p {
+    margin: 0 0 1em;
+}
+
 
 
 
 /** Footer **/
 footer {
+    padding: 100px 0;
     text-align: center;
     padding-bottom: 30px;
     line-height: 1;
