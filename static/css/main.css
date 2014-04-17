@@ -460,6 +460,16 @@ footer p {
     color: #FFF;
 }
 
+#questions {
+    padding: 0.5em 0;
+    text-align: left;
+}
+
+#questions p {
+    font-size: 1em;
+}
+
+
 /*#social h2 {
     font-size: 1.875em;
     font-weight: bold;
