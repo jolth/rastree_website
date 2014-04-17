@@ -194,6 +194,12 @@ h3 {
     font-family: Open sans;
 }
 
+h2 {
+    font-size: 1.875em;
+    font-weight: bold;
+    text-align: center;
+}
+
 .inner {
 position: relative;
 max-width: 1170px;
@@ -435,10 +441,10 @@ footer p {
     color: #FFF;
 }
 
-#social h2 {
+/*#social h2 {
     font-size: 1.875em;
     font-weight: bold;
-}
+}*/
 
 #social a:hover{
     text-decoration: none;
