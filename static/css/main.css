@@ -217,7 +217,7 @@ font-family: 'Open Sans';
 background: rgba(255,255,255,0.9); 
 /*padding: 5px 0 0;*/
 /*padding: 0.5em 0;*/
-padding: 10px 0;
+padding: 11px 0;
 position: fixed;
 top: 0;
 left: 0;
@@ -350,7 +350,7 @@ z-index: 2;
 /** overview **/
 
 #overview {
-    padding: 100px 0;
+    padding: 101px 0;
     background: #fff;
     text-align: center;
     position: relative;
@@ -410,7 +410,7 @@ z-index: 2;
 
 /** About **/
 #about {
-    padding: 100px 0;
+    padding: 101px 0;
     background: #7d7d7d;
     color: #fff;
     font-size: 18px;
@@ -438,7 +438,7 @@ z-index: 2;
 
 /** Footer **/
 footer {
-    padding: 100px 0;
+    padding: 101px 0;
     text-align: center;
     padding-bottom: 30px;
     line-height: 1;
