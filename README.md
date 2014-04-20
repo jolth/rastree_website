@@ -1,7 +1,5 @@
 # RasTree Website
 
-## Skeleton
-
 ### Front-End
 * HTML5
 * CSS3
