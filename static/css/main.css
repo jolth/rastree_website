@@ -179,25 +179,9 @@ header {
     MOBILE: Menu 
    =================== */
 
-/*
-nav {
-float: right;
-}
 
 nav ul {
-float: right;    
-padding: 0;
-}
-
-nav ul>li {
-margin: 0;
-padding: 0;
-float: left;
-}
-*/
-
-nav ul {
-    padding: 0px;
+    padding: 0;
 }
 
 nav li a.scroll {
@@ -216,7 +200,6 @@ nav a.launch {
     background: rgb(255,204,0);
     color: #fff;
     white-space: nowrap;
-    margin-left: 18px;
     padding: 15px 18px;
     font-weight: bold;
     border-radius: 4px;
@@ -244,8 +227,8 @@ nav a#pull {
 
 #banner {
 /*margin-top: 4.5em;*/
-    margin-top: 190px;
     position: relative;
+    padding: 180px 0;
 }
 
 #banner .inner {
@@ -505,10 +488,10 @@ footer p {
     background-image: url("/static/img/logo_750x208.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    /*width: 239px;
-    height: 67px;*/
-    width: 299px;
-    height: 87px;
+    width: 239px;
+    height: 67px;
+    /*width: 299px;
+    height: 87px;*/
     /*Extras */
     /*display: inline-block;
     float: left;
@@ -617,28 +600,67 @@ footer p {
     /* Style adjustments for high resolution devices */
 }
 
-/* The “intermediate” view */
+/* The “intermediate” view (pantallas de más de 480px) 
+ * If we display this page on a larger device (like a tablet or a wide smartphone) */
 @media only screen and (min-width: 480px) {
+    
+    #banner h1 {
+        font-family: 'Noto Sans';
+    }
 
-    /*nav li a.scroll {
+    .ir {
+        width: 349px;
+        height: 97px;
+    }
+
+}
+
+/* The “wide” view (pantallas de más de 768px) */
+@media only screen and (min-width: 768px) {
+
+    nav ul {
+        display: block;
+        margin: 0 auto;
+    }
+    nav li a.scroll {
+        display: inline;
+    }
+    nav ul li {
         display: inline;
     }
     nav a {
         float: left;
-    }*/
-}
-
-/* The “wide” view */
-@media only screen and (min-width: 768px) {
+    }
+    .ir {
+        width: 239px;
+        height: 67px;
+        margin: 0 auto;
+    }
+    nav a.launch {
+        margin-left: 18px;
+    }
 }
 
 /* The “maximal width” view */
 @media only screen and (min-width: 1140px) {
 
+    nav {
+        float: right;
+    }
+
+    nav ul {
+        float: right;    
+    }
+
+    nav ul>li {
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
     
     .ir {
-        width: 239px;
-        height: 67px;
+        /*width: 239px;
+        height: 67px;*/
         /*Extras */
         display: inline-block;
         float: left;
