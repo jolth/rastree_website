@@ -100,6 +100,13 @@ textarea {
     Initializr styles
     Author: Jorge A. Toro
    ========================================================================== */
+@font-face {
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 400;
+src: local('Noto Sans'), local('NotoSans'), 
+     url(http://themes.googleusercontent.com/static/fonts/notosans/v2/LeFlHvsZjXu2c3ZRgBq9nD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
 
 @font-face {
 font-family: 'Open Sans Light';
@@ -175,6 +182,17 @@ header {
     text-align: center;
 }
 
+.logo {
+/*float: left;*/
+width: 239px;
+height: 67px;
+background: url("/static/img/logo_750x208.png") no-repeat;
+background-size: 100% auto;
+text-indent: -9999px;
+
+display:inline-block;
+}
+
 /* ===================
     MOBILE: Menu 
    =================== */
@@ -227,8 +245,10 @@ nav a#pull {
 
 #banner {
 /*margin-top: 4.5em;*/
+/*    margin-top: 6.8%;*/
+    margin-top: 160px;
     position: relative;
-    padding: 180px 0;
+    /*padding: 180px 0;*/
 }
 
 #banner .inner {
@@ -239,7 +259,7 @@ padding-top: 5%;
 #banner h1 {
     font-family: 'Noto Sans';
 /*font-size: 62px;*/
-    font-size: 46px;
+    font-size: 39px;
     color: #fc0;
     line-height: 1;
     text-shadow: 0 1px 1px rgba(0,0,0,0.1);
@@ -490,8 +510,6 @@ footer p {
     background-repeat: no-repeat;
     width: 239px;
     height: 67px;
-    /*width: 299px;
-    height: 87px;*/
     /*Extras */
     /*display: inline-block;
     float: left;
@@ -535,7 +553,7 @@ footer p {
  */
 
 .visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -600,49 +618,67 @@ footer p {
     /* Style adjustments for high resolution devices */
 }
 
-/* The “intermediate” view (pantallas de más de 480px) 
+/* The “Intermediate” view (pantallas de más de 480px) 
  * If we display this page on a larger device (like a tablet or a wide smartphone) */
 @media only screen and (min-width: 480px) {
+
+    .logo {
+        width: 299px;
+        height: 87px;
+    }
     
     #banner h1 {
-        font-family: 'Noto Sans';
+        font-size: 46px;
     }
-
-    .ir {
-        width: 349px;
-        height: 97px;
-    }
-
 }
 
-/* The “wide” view (pantallas de más de 768px) */
+/* The “Wide Tablet” view (pantallas de más de 768px) */
 @media only screen and (min-width: 768px) {
+    .logo {
+        width: 239px;
+        height: 67px;
+    }
 
     nav ul {
         display: block;
         margin: 0 auto;
     }
     nav li a.scroll {
-        display: inline;
+        display: inline-block;
     }
     nav ul li {
-        display: inline;
+        display: inline-block;
     }
     nav a {
         float: left;
     }
-    .ir {
-        width: 239px;
-        height: 67px;
-        margin: 0 auto;
-    }
     nav a.launch {
         margin-left: 18px;
     }
+    #banner {
+        /*margin-top: 4.5em;*/
+        /*margin-top: 6.8%;*/
+        /*padding: 180px 0;*/
+        margin-top: 130px;
+    }
+
+    #banner h1 {
+        font-size: 52px;
+        width: 49%;
+        text-align: left;
+    }
 }
 
-/* The “maximal width” view */
+/* The “Maximal width” view 
+ * Puede ser una Laptop, PC, etc */
 @media only screen and (min-width: 1140px) {
+
+    .logo {
+        float: left;
+       /* width: 239px;
+        height: 67px;*/
+        margin: 0;
+    }
 
     nav {
         float: right;
@@ -650,6 +686,7 @@ footer p {
 
     nav ul {
         float: right;    
+        margin: 17px 0;
     }
 
     nav ul>li {
@@ -657,13 +694,20 @@ footer p {
         padding: 0;
         float: left;
     }
-    
-    .ir {
-        /*width: 239px;
-        height: 67px;*/
-        /*Extras */
-        display: inline-block;
-        float: left;
-        margin: 0;
+    nav a {
+        /*float: left;*/
+        padding: 15px 18px;
+        line-height: 1;
+        transition: .2s;
     }
+    #banner h1 {
+        font-size: 62px;
+    }
+    #banner {
+        /*margin-top: 4.5em;*/
+        /*margin-top: 6.8%;*/
+        /*padding: 180px 0;*/
+        margin-top: 77px;
+    }
+    
 }

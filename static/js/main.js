@@ -7,7 +7,8 @@ var googleMaps = {
    {
      stylers: [
        //{ hue: "#ffcc00" },
-       { hue: "#646f76" },
+       //{ hue: "#646f76" },
+       { hue: "#ffb700" },
        { saturation: -20 }
      ]
    },{
@@ -46,15 +47,11 @@ google.maps.event.addDomListener(window, 'load', googleMaps.init(4.3464112753331
 // jQuery
 $(document).ready(function() {
 
-        //$('#header a.scroll').on('click', function(){
         $('header a.scroll').on('click', function(){
-        //var h = $('#header').outerHeight();
+            var h = $('header').outerHeight();
             var link = this;
-            //console.log(link.hash > " ");
-            //console.log(link);
             $.smoothScroll({
-                //offset: -h,
-                offset: 0,
+                offset: -h,
                 scrollTarget: link.hash
             });
             return false;
