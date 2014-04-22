@@ -299,7 +299,10 @@ left: 0;
 z-index: 2;
 }
 
-/****/
+/* ===================
+    AWESOMENESS 
+   =================== */
+
 #awesomeness {
     font-size: 1.875em;
     font-weight: bold;
@@ -308,7 +311,9 @@ z-index: 2;
     text-align: center;
 }
 
-/** overview **/
+/* ===================
+    OVERVIEW 
+   =================== */
 
 #overview {
     padding: 101px 0;
@@ -366,8 +371,10 @@ z-index: 2;
     background-size: auto 10px;
 }*/
 
+/* ===================
+    ABOUT 
+   =================== */
 
-/** About **/
 #about {
     padding: 101px 0;
     background: #7d7d7d;
@@ -392,16 +399,26 @@ z-index: 2;
     margin: 0 0 1em;
 }
 
+/* ===================
+    FEATURES
+   =================== */
+
+#features {
+    /*padding: 100px 0;*/
+}
 
 
+/* ===================
+    FOOTER
+   =================== */
 
-/** Footer **/
 footer {
     padding: 101px 0;
     text-align: center;
     padding-bottom: 30px;
     line-height: 1;
 }
+
 footer p {
     font-size: .7em;
 }
