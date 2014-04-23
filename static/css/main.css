@@ -245,7 +245,7 @@ nav a#pull {
 
 #banner {
 /*margin-top: 4.5em;*/
-/*    margin-top: 6.8%;*/
+/*margin-top: 6.8%;*/
     margin-top: 160px;
     position: relative;
     /*padding: 180px 0;*/
@@ -271,7 +271,11 @@ padding-top: 5%;
 }
 
 #banner img {
-float: right;
+/*float: right;*/
+/*position: relative;
+right: 13%;*/
+position: relative;
+right: 30px;
 }
 
 #map-canvas, #map_canvas {
@@ -304,7 +308,7 @@ z-index: 2;
    =================== */
 
 #awesomeness {
-    font-size: 1.875em;
+    font-size: 1.2em;
     font-weight: bold;
     background: rgb(255,204,0);
     color: #fff;
@@ -647,6 +651,12 @@ visuallyhidden.focusable:focus {
     #banner h1 {
         font-size: 46px;
     }
+
+    #banner img {
+        float: right;
+        position: relative;
+        right: 15%;
+    }
 }
 
 /* The “Wide Tablet” view (pantallas de más de 768px) */
@@ -684,7 +694,14 @@ visuallyhidden.focusable:focus {
         width: 49%;
         text-align: left;
     }
-}
+
+    #banner img {
+        right: 0%;
+    }
+
+    #awesomeness {
+        font-size: 1.875em;
+    }
 
 /* The “Maximal width” view 
  * Puede ser una Laptop, PC, etc */
