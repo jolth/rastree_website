@@ -334,21 +334,20 @@ z-index: 2;
 }
 
 #overview ul li {
-    display: inline-block;
+    display: block;
     vertical-align: top;
-    width: 33.33%;
     font-size: 18px;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 }
 
-#overview ul>li {
+/*#overview ul>li {
     margin: 0;
     padding: 0;
-}
+}*/
 
-#overview .icon {
+/*#overview .icon {
     height: 195px;
-}
+}*/
 
 #overview p {
     margin: 0 15px;
@@ -661,6 +660,7 @@ visuallyhidden.focusable:focus {
 
 /* The “Wide Tablet” view (pantallas de más de 768px) */
 @media only screen and (min-width: 768px) {
+
     .logo {
         width: 239px;
         height: 67px;
@@ -703,6 +703,22 @@ visuallyhidden.focusable:focus {
         font-size: 1.875em;
     }
 
+    #overview ul li {
+        display: inline-block;
+        width: 33.33%;
+        margin-bottom: 75px;
+    }
+
+    #overview ul>li {
+        margin: 0;
+        padding: 0;
+    }
+
+    #overview .icon {
+        height: 195px;
+    }
+}
+
 /* The “Maximal width” view 
  * Puede ser una Laptop, PC, etc */
 @media only screen and (min-width: 1140px) {
@@ -728,15 +744,18 @@ visuallyhidden.focusable:focus {
         padding: 0;
         float: left;
     }
+    
     nav a {
         /*float: left;*/
         padding: 15px 18px;
         line-height: 1;
         transition: .2s;
     }
+    
     #banner h1 {
         font-size: 62px;
     }
+
     #banner {
         /*margin-top: 4.5em;*/
         /*margin-top: 6.8%;*/
