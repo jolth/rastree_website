@@ -382,7 +382,7 @@ z-index: 2;
     padding: 101px 0;
     background: #7d7d7d;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4;
 }
 
@@ -656,6 +656,7 @@ visuallyhidden.focusable:focus {
         position: relative;
         right: 15%;
     }
+
 }
 
 /* The “Wide Tablet” view (pantallas de más de 768px) */
@@ -716,6 +717,10 @@ visuallyhidden.focusable:focus {
 
     #overview .icon {
         height: 195px;
+    }
+
+    #about {
+        font-size: 18px;
     }
 }
 
