@@ -2,7 +2,7 @@
 import web
 
 # Database
-db = web.database(dbn='postgres', db='appname', user='username', pw='')
+#db = web.database(dbn='postgres', db='appname', user='username', pw='')
 
 # realizar cache de la página.
 cache = False 
